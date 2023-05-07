@@ -348,6 +348,10 @@ void DisplayBuffer::graph(int x, int y, graph::Graph *graph, Color color_on) { g
 void DisplayBuffer::legend(int x, int y, graph::Graph *graph, Color color_on) {
   graph->draw_legend(this, x, y, color_on);
 }
+void DisplayBuffer::graph(int x, int y, json_graph::Graph *graph, Color color_on) { graph->draw(this, x, y, color_on); }
+void DisplayBuffer::legend(int x, int y, json_graph::Graph *graph, Color color_on) {
+  graph->draw_legend(this, x, y, color_on);
+}
 #endif  // USE_GRAPH
 
 #ifdef USE_QR_CODE

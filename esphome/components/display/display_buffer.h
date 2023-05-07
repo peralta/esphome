@@ -13,6 +13,7 @@
 
 #ifdef USE_GRAPH
 #include "esphome/components/graph/graph.h"
+#include "esphome/components/json_graph/json_graph.h"
 #endif
 
 #ifdef USE_QR_CODE
@@ -345,6 +346,8 @@ class DisplayBuffer {
    * @param color_on The color of the border
    */
   void legend(int x, int y, graph::Graph *graph, Color color_on = COLOR_ON);
+  void graph(int x, int y, json_graph::Graph *graph, Color color_on = COLOR_ON);
+  void legend(int x, int y, json_graph::Graph *graph, Color color_on = COLOR_ON);
 #endif  // USE_GRAPH
 
 #ifdef USE_QR_CODE
