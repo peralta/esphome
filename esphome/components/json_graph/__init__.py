@@ -29,7 +29,7 @@ from esphome.const import (
     CONF_TRACES,
 )
 
-CODEOWNERS = ["@synco"]
+CODEOWNERS = ["@peralta"]
 
 DEPENDENCIES = ["display", "text_sensor", "graph", "sensor"]
 AUTO_LOAD = ["json"]
